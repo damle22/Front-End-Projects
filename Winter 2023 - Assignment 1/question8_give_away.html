@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+
+     <html lang="en">
+     <head><title>Adopt Dog/Cat</title>
+     <meta charset="utf-8">
+     </head>
+
+
+
+
+
+<body>
+    
+    
+    <link rel="stylesheet" href="question8.css">
+    
+    
+    <header>Pets Family <a href="question8.html"><img src ="pet_logo.jpeg" id="logo" height="100" width="100" alt=""></a></header>
+    
+     <nav>
+         
+        <ul>
+        
+            <li> <img src="home_logo2.jpeg" height="40" id="home_logo" alt=""><a href="question8.html">Home Page</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_browse.html">Browse Available Pets</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_find.html">Find Dog and Cat</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_dog_care.html">Dog Care</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_cat_care.html">Cat Care</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_give_away.html">Have a Pet to Give Away</a></li>
+            
+            <li><img src="arrow_nav.jpeg" height="40" class="nav_arrow" alt=""><a href="question8_contact.html">Contact Us</a></li>
+            
+            
+            
+        </ul>
+        
+    
+    </nav>
+    
+    <div class="give_away_title">Give Away a Pet</div>
+    
+    
+    <form class="give_away">
+    
+         <img src="form_image.jpeg" style="position: absolute" width="50" height="50" class="form_image" alt="">
+        
+        <div style="font-size: 50px">Form</div>
+        
+        <br><br>
+        
+        
+        <label for="animal">What is the animal you want to give away?</label>
+    <select id="animal" name="animal">
+         <option>-</option>
+         <option>Dog</option>
+         <option>Cat</option>
+    </select>
+        <br>
+        <br><br>
+        
+        <label for="breed"> Breed:</label>
+    <input type="text" placeholder="Type here" id="breed">
+        <br>
+        <br><br>
+        
+        <p>Age range:</p>
+        
+        <div class="radio_give_away">
+        
+        <input type="radio" id="0_to_5" name="age" value="0_to_5">
+        <label for="0_to_5">0 - 5 years old</label>
+        
+         <input type="radio" id="5_to_10" name="age" value="5_to_10">
+        <label for="5_to_10">5 - 10 years old</label>
+    
+         <input type="radio" id="10_to_15" name="age" value="10_to_15">
+        <label for="10_to_15">10 - 15 years old</label>
+        
+            
+        </div>
+            
+
+        <br>
+        <br>
+        
+        <label for="gender"> Gender:</label>
+
+        <select id="gender" name="gender">
+        <option>-</option>
+        <option>Male</option>
+        <option>Female</option>
+        </select>        
+        <br>
+        <br>
+        
+        <label for="get_along">Any need to get along with other dogs/cats?</label>
+        <select id="get_along" name="get_along">
+        <option>-</option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+        <br>
+        <br>
+        
+        <label for="suitable">Suitable for a Family with Small Children?</label>
+        <select id="suitable" name="suitable">
+        <option>-</option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+        <br><br><br>
+        
+        
+        <label for="brag_animal">Talk about your animal a bit...</label>
+        <br><br>
+        
+        <input type="text" id="brag_animal" class="talk_animal">
+        <br><br>
+        
+        <label for="fname">First Name of the Owner:</label>    
+        <input type="text" id="fname" placeholder="Type here ">
+        <br>
+        <br>
+        
+        <label for="lname">Last Name of the Owner:</label>
+        <input type="text" id="lname" placeholder="Type here">
+        <br>
+        <br>
+        
+        <label for="email">Email Adress:</label>
+        <input type="email" id="email" placeholder="Type here">
+        
+        <br><br><br>
+        
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+        
+        
+        
+    </form>
+    
+    
+    
+    
+    
+    <footer>
+      
+      <div class="popup" onclick="myFunction()">Privacy / Diclaimer Statement
+   
+      <span class="popup_text" id="my_popup"> Your information will not be sold or missused. Everything you are doing is protected.</span>
+      
+      </div>
+
+ 
+       <script>
+          function myFunction() {
+              var popup = document.getElementById("my_popup");
+                 popup.classList.toggle("show");
+           }
+        </script>  
+        
+        
+        
+    
+    </footer>
+    
+    
+    
+    
+    
+
+    
+    
+    
+</body>    
+</html>

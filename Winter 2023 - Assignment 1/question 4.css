@@ -1,0 +1,48 @@
+body {
+    background-color: yellow;
+    
+}
+
+
+#form_1{
+    background-color: azure;
+    color: blue
+}
+
+#form_2{
+    background-color: coral;
+    color: brown
+}
+
+#l1{
+    font-weight: bold;
+    color: lightskyblue;
+}
+
+#l2 {
+    font-weight: bold;
+    color: firebrick;
+        
+}
+
+#bold {
+    
+    font-weight: bold;
+}
+
+#fs1 {
+    border: solid 10px;
+    border-color: powderblue;
+    padding: 20px;;
+    margin: 0;
+    font-weight: bold;
+    
+}
+
+#fs2 {
+    border: solid 10px;
+    border-color: red;
+    padding: 20px;
+    margin: 0px;
+    
+}
