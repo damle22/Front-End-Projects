@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+
+     <html lang="en">
+
+          <head>
+               <title>Exercise 6: Simple Slide Show</title>
+               <meta charset="UTF-8">
+              
+     </head>
+     
+          <body>
+              
+            <h1>Top 4 Best Footballer</h1>  
+              
+            <div class="slider">
+              
+              <div class="img">
+                
+                <img src="images/a.jpeg" width="300" height="200" alt="" class="slider-img">
+                
+                </div>
+              
+                <div class="links">
+                
+                    <a href="javascript:previous()">Previous</a>
+                    <a href="javascript:next()">Next</a>
+                    <br><br>
+    
+                </div>
+                
+                <div class="paragraph">Karim Benzema is the best player in the world at the moment!</div>
+                
+                
+              </div>
+              
+              
+              
+              
+    <script>
+              
+        const slider_img = document.querySelector(".slider-img");
+        
+        const par = document.querySelector(".paragraph");
+        
+        const img = ["a.jpeg","b.jpeg","c.jpeg","d.jpeg"];
+        
+        const paragraph = ["Karim Benzema is the best player in the world right now. He won the Ballor d'Or 3 months ago in Paris", "Lionel Messi is currently the second best player in the world. He plays for PSG.", "Kilian Mbappe is currently the third best player in the world right now. He plays alongside Messi at PSG","Kevin de Bruyne is the fourth best player in the world right now. He plays under Pep Guardiola at Manchester City"];
+        
+        var count = 0;
+        
+        
+         function previous(){
+             
+             if (count <= 0)
+                 count = img.length;
+             
+             count--;
+             
+             return setImage(), setParagraph();
+             
+             
+         }     
+              
+        
+        function next(){                        
+            
+              if (count >= img.length -1)  
+                  count = -1;
+            
+            count++;
+            
+            return setImage(), setParagraph();
+            
+            
+            
+        }
+        
+        
+        function setImage(){
+            
+            return slider_img.setAttribute("src", "images/" + img[count]);
+            
+            
+        }
+              
+        function setParagraph(){
+            
+            
+            return par.innerHTML = paragraph[count];  
+        }   
+        
+        
+    </script>              
+              
+              
+              
+    </body>
+</html>

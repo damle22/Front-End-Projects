@@ -1,0 +1,11 @@
+div{
+    background-color: grey;
+    height: auto;
+    width: auto;
+    border: 30px solid;
+    color: skyblue;
+    margin: 100px;
+    padding: 30px;
+    word-wrap: break-word;
+} 
+

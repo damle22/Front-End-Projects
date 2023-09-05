@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+
+     <html lang="en">
+
+          <head>
+               <title>Exercise 5</title>
+               <meta charset="UTF-8">
+              
+   <script>
+        
+        function getUserInfo(){
+            
+            var fn = prompt("What is your full name?", ""); 
+            var age = prompt("How old are you?", "");
+            
+            var fn_age = "Hi, my name is " + fn + " and I am " + age + " yearls old";
+            
+            document.getElementById("content").innerHTML = fn_age;
+                
+        }
+       
+            window.onload = getUserInfo;
+     
+    </script>
+              
+          </head>
+     
+          <body>
+                        
+             <p ><strong>User Information:</strong></p>
+              
+              
+                <div id="content"></div>
+              
+          </body>
+</html>

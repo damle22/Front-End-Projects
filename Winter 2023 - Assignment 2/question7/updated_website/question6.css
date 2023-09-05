@@ -1,0 +1,39 @@
+ul{
+    padding: 0px;
+    
+}
+
+
+
+li{
+    padding: 10px;
+    width: 150px;
+    height: 15px;
+    background-color: gainsboro;
+    color: black;
+}
+
+#li1 {
+    background-color: forestgreen;
+    color: white
+    
+}
+.box:hover{
+    background-color: #3a3d38;
+    color: white;
+    
+
+    
+    
+}
+
+ul {
+   
+    list-style: none
+    
+    
+}
+    
+    
+    
+    

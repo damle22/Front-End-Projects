@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+     <html lang="en">
+     <head><title>Print JavaScript Array</title>
+     <meta charset="utf-8">
+     </head>
+
+<body>
+         
+    <h1>Java Script Array</h1>
+    
+    <h3>Print the elements of an array using toString()</h3>
+    
+    <p id="p1"></p>
+    
+    <h3>Print the elements of an array using join()</h3>
+    
+    <p id="p2"></p>
+    
+    <h3>Print the elements of an array in the format of index: value</h3>
+    
+    <p id="p3"></p>
+    
+    
+    
+    
+    <script>
+    
+    const fruits = ["Apple", "Banana", "Orange", "Mango", "Blueberry"];
+    
+        document.getElementById("p1").innerHTML = fruits;
+        
+        let text = fruits.join(" & ");
+        
+        document.getElementById("p2").innerHTML = text;
+   
+        let format = "";
+        
+        fruits.forEach(myFunction);
+        
+        document.getElementById("p3").innerHTML = format;
+        
+        function myFunction (item, index) {
+            
+            format = format + index + ": " + item + "<br>";
+        }
+        
+        
+    </script>
+         
+         
+</body>
+</html>
